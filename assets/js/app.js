@@ -554,7 +554,7 @@ async function renderFarmerLivestock(filter = '') {
         if (!tbody) return;
         
         const livestock = await DB.query('livestock', l => l.farm_id == SESSION.user.id);
-        let rows =        let rows = livestock;
+        let rows = livestock;
         
         if (filter) {
             rows = rows.filter(l => 
