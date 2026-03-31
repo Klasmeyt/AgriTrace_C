@@ -1,27 +1,14 @@
 {
-  "name": "klasmeyt/agritrace",
-  "description": "AgriTrace+ Livestock System",
+  "name": "agritrace/system",
+  "description": "AgriTrace+",
   "type": "project",
   "require": {
-    "php": "^8.1",
+    "php": "8.*",
+    "ext-pdo": "*",
     "supabase/supabase-php": "^1.1"
   },
   "require-dev": {},
-  "autoload": {
-    "psr-4": {}
-  },
   "scripts": {
-    "post-install-cmd": [
-      "@auto-scripts"
-    ],
-    "auto-scripts": []
-  },
-  "config": {
-    "optimize-autoloader": true,
-    "sort-packages": true,
-    "allow-plugins": {
-      "php-http/discovery": true
-    }
-  },
-  "minimum-stability": "stable"
+    "start": "php -S 0.0.0.0:$PORT -t ."
+  }
 }
