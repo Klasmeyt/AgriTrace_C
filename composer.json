@@ -1,0 +1,10 @@
+{
+  "require": {
+    "supabase/community-postgrest-php": "^0.1.7",
+    "supabase/gotrue-php": "^2.0",
+    "supabase/storage-php": "^0.0.5"
+  },
+  "require-dev": {
+    "symfony/var-dumper": "^6.0"
+  }
+}
